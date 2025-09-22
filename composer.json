@@ -1,0 +1,13 @@
+{
+    "name": "nimp/link-loom-core",
+    "description": "This package is designed to create short links and decode them back",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nimp\\LinkLoomCore\\": "src/"
+        }
+    },
+    "minimum-stability": "RC",
+    "require": {}
+}
