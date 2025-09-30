@@ -3,7 +3,7 @@
 namespace Nimp\LinkLoomCore\observer\events;
 
 use Nimp\LinkLoomCore\UrlShortener;
-use Nimp\LinkLoomCore\interfaces\NamedEventInterface;
+use Nimp\Observer\NamedEventInterface;
 
 abstract class BaseShortenerEvent implements NamedEventInterface
 {
