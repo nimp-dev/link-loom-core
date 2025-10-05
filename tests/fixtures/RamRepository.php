@@ -8,7 +8,7 @@ use Nimp\LinkLoomCore\interfaces\RepositoryInterface;
 
 /**
  * Using for test.
- * Simple repository: code as key, url as value.
+ * Simple repository: code as a key, url as a value.
  */
 final class RamRepository implements RepositoryInterface
 {

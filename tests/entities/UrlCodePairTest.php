@@ -13,6 +13,7 @@ class UrlCodePairTest extends TestCase
 {
     /**
      * Test that getUrl returns the URL passed to the constructor.
+     * @return void
      */
     public function testGetUrlReturnsCorrectUrl(): void
     {
@@ -25,6 +26,7 @@ class UrlCodePairTest extends TestCase
 
     /**
      * Test that getUrl handles empty string URLs.
+     * @return void
      */
     public function testGetUrlHandlesEmptyUrl(): void
     {
@@ -37,6 +39,7 @@ class UrlCodePairTest extends TestCase
 
     /**
      * Test that getUrl handles special characters in the URL.
+     * @return void
      */
     public function testGetUrlHandlesSpecialCharacters(): void
     {

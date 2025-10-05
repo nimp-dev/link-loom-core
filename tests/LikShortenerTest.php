@@ -23,6 +23,10 @@ final class LikShortenerTest extends TestCase
 {
     private UrlShortener $shortener;
 
+    /**
+     * create a shortener instance
+     * @inheritdoc
+     */
     protected function setUp(): void
     {
 
@@ -35,6 +39,7 @@ final class LikShortenerTest extends TestCase
     }
 
     /**
+     * check if shortener returns a correct code
      * @throws UrlShortenerException
      */
     #[Test]
@@ -46,6 +51,7 @@ final class LikShortenerTest extends TestCase
     }
 
     /**
+     * check if shortener throws an exception on invalid url
      * @throws UrlShortenerException
      */
     #[Test]
@@ -56,6 +62,7 @@ final class LikShortenerTest extends TestCase
     }
 
     /**
+     * check if shortener returns a find url
      * @throws UrlShortenerException
      */
     #[Test]
@@ -67,6 +74,7 @@ final class LikShortenerTest extends TestCase
     }
 
     /**
+     * check if shortener throws an exception on invalid code
      * @throws UrlShortenerException
      */
     #[Test]
@@ -77,6 +85,7 @@ final class LikShortenerTest extends TestCase
     }
 
     /**
+     * check if events are dispatched
      * @throws UrlShortenerException
      */
     public function testEventsAreDispatched(): void
@@ -101,6 +110,10 @@ final class LikShortenerTest extends TestCase
         $this->assertSame(['onStartEncode', 'onSuccessEncode', 'onStartDecode', 'onSuccessDecode'], $listener->handled);
     }
 
+    /**
+     * Invalid urls for testing
+     * @return array[]
+     */
     public static function invalidUrls(): array
     {
         return [
@@ -112,6 +125,7 @@ final class LikShortenerTest extends TestCase
     }
 
     /**
+     * check if shortener throws an exception on invalid url
      * @throws UrlShortenerException
      */
     #[Test]
